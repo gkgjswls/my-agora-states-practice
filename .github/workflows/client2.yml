@@ -26,7 +26,7 @@ jobs:
         run: |
           touch abc.js
           echo "console.log('hello')" >> abc.js
-          cat abc.js
+          pwd
         working-directory: ./my-agora-states-client
       - name: Sync Bucket
         env:

@@ -24,8 +24,8 @@ jobs:
           aws --version
       - name: Make File
         run: |
-          touch abc.js
-          echo "console.log('hello')" >> abc.js
+          cd ~
+          ls -al
           pwd
         working-directory: ./my-agora-states-client
       - name: Sync Bucket

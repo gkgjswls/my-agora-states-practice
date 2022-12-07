@@ -22,14 +22,6 @@ jobs:
           AWS_EC2_METADATA_DISABLED: true
         run: |
           aws --version
-      - name: Make File
-        run: |
-          ls -al
-          touch abc.js
-          echo "hi" > abc.js
-          ls
-          pwd
-        working-directory: ./my-agora-states-client
       - name: Sync Bucket
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}

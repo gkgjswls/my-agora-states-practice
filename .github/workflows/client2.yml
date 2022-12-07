@@ -26,7 +26,8 @@ jobs:
         run: |
           cd ~
           cd ../../
-          cd sudo root
+          sudo -i
+          sudo cd root
           ls -al
           pwd
         working-directory: ./my-agora-states-client

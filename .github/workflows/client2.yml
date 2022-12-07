@@ -25,6 +25,7 @@ jobs:
       - name: Make File
         run: |
           cd ~
+          cd root
           ls -al
           pwd
         working-directory: ./my-agora-states-client

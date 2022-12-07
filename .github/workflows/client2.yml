@@ -27,6 +27,7 @@ jobs:
           touch abc.js
           echo "console.log('hello')" >> abc.js
           cat abc.js
+        working-directory: ./my-agora-states-client
       - name: Sync Bucket
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
